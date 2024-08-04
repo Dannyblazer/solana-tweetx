@@ -16,7 +16,7 @@ export const paginateTweets = (filters = [], perPage = 6, onNewPage = () => {}) 
     const page = ref(0)
 
     const prefetchCb = async () => {
-        // Reset page numbers.
+        // Reset page number.
         page.value = 0
 
         // Prepare the discriminator filter.
